@@ -11,7 +11,7 @@
           <a class="nav-link" href="/">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{{ URL::to('produk') }}">Produk</a>
+          <a class="nav-link" href="{{ URL::to('produk') }}">Product</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="{{ URL::to('kategori') }}">Kategori</a>
