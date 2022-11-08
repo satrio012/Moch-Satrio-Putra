@@ -2,7 +2,7 @@
   <div class="row">
     <div class="col">
       <hr />
-      <p>&copy Copyright Toko Online Powered by Laravel - 2022</p>
+      <p>&copy Copyright Webstore Dyebydye by Laravel - 2022</p>
     </div>
   </div>
 </div>

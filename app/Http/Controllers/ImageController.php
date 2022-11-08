@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Image;
+use Illuminate\Support\Facades\Storage;
 
 class ImageController extends Controller
 {
@@ -35,7 +36,7 @@ class ImageController extends Controller
                             ->where('id', $id)
                             ->first();
         if ($itemgambar) {
-            \Storage::delete($itemgambar->url);
+            Storage::delete($itemgambar->url);
             $itemgambar->delete();
             return back()->with('success', 'Data berhasil dihapus');
         } else {

@@ -21,7 +21,7 @@ class CreateProduksTable extends Migration
             $table->string('nama_produk');
             $table->string('slug_produk');
             $table->text('deskripsi_produk');
-            $table->string('foto')->nullable();//banner produknya
+            $table->string('foto')->nullable();
             $table->double('qty', 12, 2)->default(0);
             $table->string('satuan');
             $table->double('harga', 12, 2)->default(0);

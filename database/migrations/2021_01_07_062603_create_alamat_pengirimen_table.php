@@ -16,7 +16,7 @@ class CreateAlamatPengirimenTable extends Migration
         Schema::create('alamat_pengiriman', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('user_id')->unsigned();
-            $table->string('status');//utama atau tidak
+            $table->string('status');
             $table->string('nama_penerima');
             $table->string('no_tlp');
             $table->text('alamat');

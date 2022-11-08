@@ -20,8 +20,8 @@ class CreateKategorisTable extends Migration
             $table->string('slug_kategori');
             $table->text('deskripsi_kategori');
             $table->string('status');
-            $table->string('foto')->nullable();//foto atau banner kategori
-            $table->integer('user_id')->unsigned();//user yang menginput kategori
+            $table->string('foto')->nullable();
+            $table->integer('user_id')->unsigned();
             $table->foreign('user_id')->references('id')->on('users');
             $table->timestamps();
         });
